@@ -37,12 +37,12 @@ useHead({
             class="font-semibold text-lg"
           />
           <div class="mt-4">
-            <RouterLink
-              :to="`/blogs/${blog.uid}`"
+            <a
+              :href="`/blogs/${blog.uid}`"
               class="bg-indigo-500 mt-4 px-4 py-1 text-sm rounded-full text-white"
             >
               Read more
-            </RouterLink>
+            </a>
           </div>
         </div>
       </div>
