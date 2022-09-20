@@ -22,16 +22,16 @@ useHead({
   <div class="py-16">
     <div class="flex items-center">
       <div class="w-1/2">
-        <div class="flex flex-col">
+        <div class="flex flex-col max-w-lg">
           <prismic-text
             wrapper="h1"
             :field="home.data.headline"
-            class="text-4xl font-bold mb-4"
+            class="text-6xl font-bold tracking-tight text-gray-900"
           />
           <prismic-text
             wrapper="h3"
             :field="home.data.caption"
-            class="text-xl text-gray-600"
+            class="text-xl text-gray-500 mt-4"
           />
         </div>
       </div>
