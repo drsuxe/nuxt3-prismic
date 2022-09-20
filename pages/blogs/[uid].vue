@@ -8,6 +8,17 @@ const { data: blog } = await useAsyncData("blog", () =>
 
 <template>
   <div>
-    {{ blog }}
+    <article class="prose lg:prose-xl">
+      <prismic-image
+        class="aspect-video object-cover rounded-lg mb-4 max-w-2xl"
+        :field="blog.data.thumbnail"
+      />
+      <prismic-text
+        wrapper="h1"
+        :field="blog.data.title"
+        class="font-semibold text-4xl mb-4"
+      />
+      <prismic-rich-text :field="blog.data.content" />
+    </article>
   </div>
 </template>
