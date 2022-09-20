@@ -8,13 +8,8 @@ const { data: home } = await useAsyncData("home", () =>
 );
 
 useHead({
-  title,
-  meta: [
-    {
-      name: "description",
-      content: description,
-    },
-  ],
+  title: computed(() => home?.value?.data?.headline[0].text || "Homexx"),
+  meta: [{ name: "description", content: description }],
 });
 </script>
 
