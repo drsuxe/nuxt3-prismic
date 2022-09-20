@@ -17,8 +17,8 @@
         <li>
           <NuxtLink
             class="px-4 py-1 rounded-full hover:text-indigo-600"
-            to="/portofolio"
-            >Portofolio</NuxtLink
+            to="/Video"
+            >Video</NuxtLink
           >
         </li>
       </ul>
